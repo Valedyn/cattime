@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 public class Main {
     public static void main(String[] args) throws UnknownHostException, SocketException {
 
-        String timeServer = ""; // TODO replace with time server
+        String timeServer = ""; // TODO replace with time server configuration
         try {
             Inet4Address inet4Address = (Inet4Address) Inet4Address.getByName(timeServer);
             Packet packet = new Packet(inet4Address, 123);
